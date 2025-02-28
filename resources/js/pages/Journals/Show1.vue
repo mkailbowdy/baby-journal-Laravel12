@@ -44,7 +44,7 @@ dayjs.extend(relativeTime);
                     </div>
                     <div>
                         <div class="mb-8">
-                            <img :src="`${import.meta.env.AWS_ENDPOINT}/${journal.image}`" alt="journal image" />
+                            <img :src="`${import.meta.env.VITE_AWS_ENDPOINT}/${journal.image}`" alt="journal image" />
                         </div>
                         <p class="mt-4 text-lg text-gray-900">
                             {{ journal.entry }}

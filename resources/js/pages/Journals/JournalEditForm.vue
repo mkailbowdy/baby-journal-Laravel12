@@ -56,7 +56,7 @@ function deleteJournal(journal: Journal) {
             <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
             <div class="mt-2 divide-y rounded-lg bg-white p-4 shadow-md">
                 <form @submit.prevent="updateJournal(props.journal)">
-                    <img v-if="journal.image" alt="profile picture" :src="`${import.meta.env.AWS_ENDPOINT}/${journal.image}`" class="rounded-lg" />
+                    <img v-if="journal.image" alt="profile picture" :src="`${import.meta.env.VITE_AWS_ENDPOINT}/${journal.image}`" class="rounded-lg" />
                     <BaseInput
                         label="Date"
                         v-model="form.date"
