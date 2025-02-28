@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { type BreadcrumbItem } from '@/types';
+import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue';
 
 interface Props {
     className?: string;
@@ -58,7 +59,7 @@ const updatePassword = () => {
 </script>
 
 <template>
-    <AppLayout :breadcrumbs="breadcrumbItems">
+    <AuthenticatedLayout>
         <Head title="Profile settings" />
 
         <SettingsLayout>
@@ -123,5 +124,5 @@ const updatePassword = () => {
                 </form>
             </div>
         </SettingsLayout>
-    </AppLayout>
+    </AuthenticatedLayout>
 </template>

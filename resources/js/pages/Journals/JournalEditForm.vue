@@ -46,7 +46,8 @@ function deleteJournal(journal: Journal) {
         },
     );
 }
-const awsUrl = import.meta.env.VITE_AWS_URL
+const awsUrl = import.meta.env.VITE_AWS_URL;
+const environment = import.meta.env.VITE_APP_ENV;
 </script>
 <template>
     <AuthenticatedLayout>
@@ -58,7 +59,8 @@ const awsUrl = import.meta.env.VITE_AWS_URL
             <!-- We've used 3xl here, but feel free to try other max-widths based on your needs -->
             <div class="mt-2 divide-y rounded-lg bg-white p-4 shadow-md">
                 <form @submit.prevent="updateJournal(props.journal)">
-                    <img v-if="journal.image" alt="profile picture" :src="`${awsUrl}${journal.image}`" class="rounded-lg" />
+                    <img v-if="environment === 'local'" :src="`/storage/${journal.image}`" alt="journal image" />
+                    <img v-else :src="`${awsUrl}${journal.image}`" alt="journal image" />
                     <BaseInput
                         label="Date"
                         v-model="form.date"

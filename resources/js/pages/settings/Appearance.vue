@@ -7,6 +7,7 @@ import { type BreadcrumbItem } from '@/types';
 
 import AppLayout from '@/layouts/AppLayout.vue';
 import SettingsLayout from '@/layouts/settings/Layout.vue';
+import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue';
 
 const breadcrumbItems: BreadcrumbItem[] = [
     {
@@ -17,7 +18,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
 </script>
 
 <template>
-    <AppLayout :breadcrumbs="breadcrumbItems">
+    <AuthenticatedLayout>
         <Head title="Appearance settings" />
 
         <SettingsLayout>
@@ -26,5 +27,6 @@ const breadcrumbItems: BreadcrumbItem[] = [
                 <AppearanceTabs />
             </div>
         </SettingsLayout>
-    </AppLayout>
+    </AuthenticatedLayout>
+
 </template>

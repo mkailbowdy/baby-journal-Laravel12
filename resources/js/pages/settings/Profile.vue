@@ -11,6 +11,7 @@ import { Label } from '@/components/ui/label';
 import AppLayout from '@/layouts/AppLayout.vue';
 import SettingsLayout from '@/layouts/settings/Layout.vue';
 import { type BreadcrumbItem, type SharedData, type User } from '@/types';
+import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue';
 
 interface Props {
     mustVerifyEmail: boolean;
@@ -43,7 +44,7 @@ const submit = () => {
 </script>
 
 <template>
-    <AppLayout :breadcrumbs="breadcrumbs">
+    <AuthenticatedLayout>
         <Head title="Profile settings" />
 
         <SettingsLayout>
@@ -107,5 +108,5 @@ const submit = () => {
 
             <DeleteUser />
         </SettingsLayout>
-    </AppLayout>
+    </AuthenticatedLayout>
 </template>
