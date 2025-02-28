@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import PrimaryButton from '@/components/PrimaryButton.vue';
-import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue';
+import AuthenticatedLayout from '@/layouts/AuthLayout.vue';
 import BaseInput from '@/pages/Journals/BaseInput.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
 

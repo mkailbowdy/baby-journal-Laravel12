@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useFlashMessage } from '@/composables/useFlashMessage';
-import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue';
+import AuthenticatedLayout from '@/layouts/AuthLayout.vue';
 import JournalForm from '@/pages/Journals/JournalForm.vue';
 import { MessageType } from '@/types/MessageType';
 const props = defineProps(['baby', 'journal']);
