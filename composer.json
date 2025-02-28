@@ -10,9 +10,16 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "brianium/paratest": "^7.8",
         "inertiajs/inertia-laravel": "^2.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "league/flysystem-aws-s3-v3": "^3.0",
+        "pda/pheanstalk": "^6.0",
+        "symfony/http-client": "^7.2",
+        "symfony/mailgun-mailer": "^7.2",
+        "symfony/postmark-mailer": "^7.2",
+        "symfony/psr-http-message-bridge": "^7.2",
         "tightenco/ziggy": "^2.4"
     },
     "require-dev": {
