@@ -52,7 +52,7 @@ const awsUrl = import.meta.env.VITE_AWS_URL
                 </Dropdown>
             </div>
             <div>
-                <img v-if="journal.image" :src="`${awsUrl}/${journal.image}`" alt="journal image" class="rounded-lg" />
+                <img v-if="journal.image" :src="`${awsUrl}${journal.image}`" alt="journal image" class="rounded-lg" />
                 <p class="mt-4 whitespace-pre-wrap text-xl text-gray-900">
                     {{ journal.entry }}
                 </p>
