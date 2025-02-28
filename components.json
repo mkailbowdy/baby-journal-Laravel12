@@ -12,9 +12,9 @@
     },
     "framework": "laravel",
     "aliases": {
-        "components": "resources/js/Components",
+        "components": "resources/js/components",
         "utils": "@/lib/utils",
-        "ui": "resources/js/Components/ui",
+        "ui": "resources/js/components/ui",
         "lib": "@/lib",
         "hooks": "@/hooks"
     }
