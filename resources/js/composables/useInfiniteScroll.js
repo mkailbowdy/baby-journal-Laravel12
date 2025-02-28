@@ -1,4 +1,4 @@
-import { useIntersect } from '@/Composables/useIntersect.js';
+import { useIntersect } from '@/composables/useIntersect.js';
 import { router, usePage } from '@inertiajs/vue3';
 import { computed, onMounted, ref } from 'vue';
 

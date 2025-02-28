@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useFlashMessage } from '@/Composables/useFlashMessage';
+import { useFlashMessage } from '@/composables/useFlashMessage';
 import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue';
 import JournalForm from '@/pages/Journals/JournalForm.vue';
 import { MessageType } from '@/types/MessageType';
