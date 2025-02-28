@@ -46,6 +46,6 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return to_route('babies.index');
+        return to_route('dashboard');
     }
 }

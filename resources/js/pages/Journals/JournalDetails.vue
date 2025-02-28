@@ -8,7 +8,6 @@ defineProps(['journal', 'baby']);
 
 dayjs.extend(relativeTime);
 
-const appEnv = import.meta.env.VITE_APP_ENV;
 const awsUrl = import.meta.env.VITE_AWS_URL
 
 </script>
