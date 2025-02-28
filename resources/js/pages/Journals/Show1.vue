@@ -44,7 +44,7 @@ dayjs.extend(relativeTime);
                     </div>
                     <div>
                         <div class="mb-8">
-                            <img :src="`../../storage/${journal.image}`" alt="journal image" />
+                            <img :src="`/${journal.image}`" alt="journal image" />
                         </div>
                         <p class="mt-4 text-lg text-gray-900">
                             {{ journal.entry }}

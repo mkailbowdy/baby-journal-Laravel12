@@ -3,10 +3,12 @@ import Dropdown from '@/components/Dropdown.vue';
 import DropdownLink from '@/components/DropdownLink.vue';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
+import { env } from '@headlessui/vue/dist/utils/env';
 
 defineProps(['journal', 'baby']);
 
 dayjs.extend(relativeTime);
+
 </script>
 
 <template>
@@ -48,7 +50,7 @@ dayjs.extend(relativeTime);
                 </Dropdown>
             </div>
             <div>
-                <img v-if="journal.image" :src="`/storage/${journal.image}`" alt="journal image" class="rounded-lg" />
+                <img v-if="journal.image" :src="`${import.meta.env.AWS_ENDPOINT}/${journal.image}`" alt="journal image" class="rounded-lg" />
                 <p class="mt-4 whitespace-pre-wrap text-xl text-gray-900">
                     {{ journal.entry }}
                 </p>
