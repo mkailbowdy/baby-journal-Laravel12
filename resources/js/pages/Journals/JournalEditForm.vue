@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import InputError from '@/components/InputError.vue';
 import PrimaryButton from '@/components/PrimaryButton.vue';
-import AuthenticatedLayout from '@/layouts/AuthLayout.vue';
+import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue';
+
 import BaseInput from '@/pages/Journals/BaseInput.vue';
 import DeleteJournalConfirmation from '@/pages/Journals/DeleteJournalConfirmation.vue';
 import { Journal } from '@/types/Journal';

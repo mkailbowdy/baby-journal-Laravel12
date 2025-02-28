@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import SecondaryButton from '@/components/SecondaryButton.vue';
 import { useFlashMessage } from '@/composables/useFlashMessage';
-import AuthenticatedLayout from '@/layouts/AuthLayout.vue';
+import AuthenticatedLayout from '@/layouts/AuthenticatedLayout.vue';
 import BabyEdit from '@/pages/Babies/BabyEdit.vue';
 import { Baby } from '@/types/Baby';
 import { MessageType } from '@/types/MessageType';
