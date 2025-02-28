@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BaseInput from '@/Pages/Journals/BaseInput.vue';
+import BaseInput from '@/pages/Journals/BaseInput.vue';
 import { Journal } from '@/types/Journal';
 import { debounce } from 'lodash';
 import { computed, ref } from 'vue';
