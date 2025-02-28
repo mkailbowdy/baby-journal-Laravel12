@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/vue3';
+import NavBar from '@/components/NavBar.vue';
 
 const sidebarNavItems: NavItem[] = [
     {
@@ -24,6 +25,7 @@ const currentPath = window.location.pathname;
 </script>
 
 <template>
+    <NavBar />
     <div class="px-4 py-6">
         <Heading title="Settings" description="Manage your profile and account settings" />
 
