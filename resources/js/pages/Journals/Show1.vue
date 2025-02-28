@@ -46,7 +46,7 @@ const awsUrl = import.meta.env.VITE_AWS_URL
                     </div>
                     <div>
                         <div class="mb-8">
-                            <img :src="`${awsUrl}/${journal.image}`" alt="journal image" />
+                            <img :src="`${awsUrl}${journal.image}`" alt="journal image" />
                         </div>
                         <p class="mt-4 text-lg text-gray-900">
                             {{ journal.entry }}
