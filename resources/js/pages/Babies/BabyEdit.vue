@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import PrimaryButton from '@/components/PrimaryButton.vue';
-import { useFlashMessage } from '@/Composables/useFlashMessage';
-import DeleteJournalConfirmation from '@/Pages/Journals/DeleteJournalConfirmation.vue';
+import { useFlashMessage } from '@/composables/useFlashMessage';
+import DeleteJournalConfirmation from '@/pages/Journals/DeleteJournalConfirmation.vue';
 import { MessageType } from '@/types/MessageType';
 import { Link } from '@inertiajs/vue3';
 const props = defineProps(['baby', 'form']);
