@@ -8,6 +8,8 @@ defineProps(['journal', 'baby']);
 
 dayjs.extend(relativeTime);
 
+const awsEndpoint = import.meta.env.VITE_AWS_ENDPOINT
+
 </script>
 
 <template>
@@ -49,7 +51,7 @@ dayjs.extend(relativeTime);
                 </Dropdown>
             </div>
             <div>
-                <img v-if="journal.image" :src="`${import.meta.env.VITE_AWS_ENDPOINT}/${journal.image}`" alt="journal image" class="rounded-lg" />
+                <img v-if="journal.image" :src="`${awsEndpoint}/${journal.image}`" alt="journal image" class="rounded-lg" />
                 <p class="mt-4 whitespace-pre-wrap text-xl text-gray-900">
                     {{ journal.entry }}
                 </p>

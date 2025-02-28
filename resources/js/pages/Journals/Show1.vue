@@ -6,6 +6,8 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 
 defineProps<{ journal: Journal }>();
 dayjs.extend(relativeTime);
+
+const awsEndpoint = import.meta.env.VITE_AWS_ENDPOINT
 </script>
 
 <template>
@@ -44,7 +46,7 @@ dayjs.extend(relativeTime);
                     </div>
                     <div>
                         <div class="mb-8">
-                            <img :src="`${import.meta.env.VITE_AWS_ENDPOINT}/${journal.image}`" alt="journal image" />
+                            <img :src="`${awsEndpoint}/${journal.image}`" alt="journal image" />
                         </div>
                         <p class="mt-4 text-lg text-gray-900">
                             {{ journal.entry }}
