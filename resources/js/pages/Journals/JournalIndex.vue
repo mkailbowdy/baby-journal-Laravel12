@@ -124,7 +124,7 @@ const formSubmitted = () => {
         <div v-else>
             <div v-if="journals.data.length">
                 <div v-for="journal in items" :key="journal.id">
-                    <div class="mx-auto max-w-2xl p-4 sm:p-2 lg:p-8">
+                    <div class="mx-auto max-w-2xl">
                         <div class="mt-2 divide-y rounded-lg bg-white shadow-md">
                             <JournalDetails :journal="journal" :baby="props.baby" />
                         </div>

@@ -16,7 +16,7 @@ const environment = import.meta.env.VITE_APP_ENV;
     <div class="flex space-x-2 rounded-lg border p-6">
         <div class="flex-1">
             <div class="flex items-center justify-between">
-                <div class="mb-4">
+                <div class="items-center">
                     <span class="text-2xl font-bold">
                         {{
                             new Date(journal.date).toLocaleString('en-US', {
@@ -50,10 +50,10 @@ const environment = import.meta.env.VITE_APP_ENV;
                     </template>
                 </Dropdown>
             </div>
-            <div>
+            <div class="flex flex-col items-center px-2 py-4" >
                 <img v-if="environment === 'local'" :src="`/storage/${journal.image}`" alt="journal image" />
                 <img v-else :src="`${awsUrl}${journal.image}`" alt="journal image" />
-                <p class="mt-4 whitespace-pre-wrap text-xl text-gray-900">
+                <p class="mt-4 whitespace-pre-wrap text-gray-900">
                     {{ journal.entry }}
                 </p>
             </div>
