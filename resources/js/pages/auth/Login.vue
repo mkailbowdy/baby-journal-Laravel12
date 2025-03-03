@@ -38,7 +38,7 @@ const submit = () => {
 
             <div class="grid gap-6">
                 <div class="grid gap-2">
-                    <small class="text-green-500 font-bold">Demo the app - email: test@example.com user, password: abcd1234</small>
+                    <small class="text-green-500 font-bold">Demo the app - email: test@example.com, password: abcd1234</small>
                     <Label for="email">Email address</Label>
                     <Input
                         id="email"
