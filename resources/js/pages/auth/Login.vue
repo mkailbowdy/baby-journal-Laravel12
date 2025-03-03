@@ -15,8 +15,8 @@ defineProps<{
 }>();
 
 const form = useForm({
-    email: '',
-    password: '',
+    email: 'test@example.com',
+    password: 'abcd1234',
     remember: false,
 });
 
@@ -34,10 +34,11 @@ const submit = () => {
         <div v-if="status" class="mb-4 text-center text-sm font-medium text-green-600">
             {{ status }}
         </div>
-
         <form @submit.prevent="submit" class="flex flex-col gap-6">
+
             <div class="grid gap-6">
                 <div class="grid gap-2">
+                    <small class="text-green-500 font-bold">Demo the app - email: test@example.com user, password: abcd1234</small>
                     <Label for="email">Email address</Label>
                     <Input
                         id="email"
